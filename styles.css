@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+
+:root {
+  --myFontFamily: "Open Sans", Arial, sans-serif;
+  --myPageColor: #e4dcef; ;
+}
+
+body {
+  background-color: var(--myPageColor);
+  margin: 0px;
+}
+
+@media (max-width: 815px) {
+  #navbar {
+    background-color: var(--myPageColor);
+    position: absolute;
+    overflow: scroll;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 300px;
+    z-index: 1;
+    border-bottom: 3px solid rgb(172, 172, 172);
+  }
+
+  #main-doc {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 310px;
+  }
+
+  .section-content code {
+    display: block;
+    text-align: left;
+    background-color: #d3d3d3;
+    margin-left: 10px;
+    margin-right: 5px;
+    line-height: 1.9em;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .section-content p {
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 816px) {
+  #navbar {
+    background-color: var(--myPageColor);
+    color: white;
+    height: 100%;
+    width: 310px;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    border-right: solid 3px rgb(172, 172, 172);
+  }
+
+  #main-doc {
+    margin-left: 340px;
+    margin-top: 50px;
+  }
+
+  .section-content code {
+    display: block;
+    text-align: left;
+    background-color: #d3d3d3;
+    margin-left: 25px;
+    margin-right: 25px;
+    line-height: 1.9em;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .section-content p {
+    margin-left: 15px;
+    margin-right: 50px;
+    font-size: 17px;
+  }
+}
+
+#h1-navbar {
+  text-align: center;
+  color: black;
+  font-family: var(--myFontFamily);
+  font-weight: normal;
+  font-size: 30px;
+}
+
+#nav-ul {
+  padding: 0;
+}
+
+#nav-ul li {
+  width: 100%;
+  border-top: solid 1px black;
+  position: relative;
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(105, 105, 105);
+  font-size: 19px;
+  font-family: var(--my-font-family);
+  margin-left: 25px;
+  display: block;
+}
+
+.h1-for-content {
+  font-family: var(--my-font-family);
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.section-content li {
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.main-section {
+  margin-bottom: 15px;
+}
+
+.nested-list {
+  padding-left: 10px;
+  margin-top: 15px;
+}
